@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "tezign-font";
+  src:url("fonts/tezign-font.eot");
+  src:url("fonts/tezign-font.eot?#iefix") format("embedded-opentype"),
+    url("fonts/tezign-font.woff") format("woff"),
+    url("fonts/tezign-font.ttf") format("truetype"),
+    url("fonts/tezign-font.svg#tezign-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "tezign-font" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "tezign-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-calender:before {
+  content: "a";
+}
+.icon-close:before {
+  content: "c";
+}
+.icon-delete:before {
+  content: "d";
+}
+.icon-exclamation:before {
+  content: "f";
+}
+.icon-ok:before {
+  content: "g";
+}
+.icon-portfolio:before {
+  content: "h";
+}
+.icon-msg:before {
+  content: "i";
+}
+.icon-cover:before {
+  content: "l";
+}
+.icon-project:before {
+  content: "n";
+}
+.icon-type-ux:before {
+  content: "o";
+}
+.icon-type-graphics:before {
+  content: "p";
+}
+.icon-type-illustration:before {
+  content: "q";
+}
+.icon-ux:before {
+  content: "r";
+}
+.icon-graphics:before {
+  content: "s";
+}
+.icon-illustration:before {
+  content: "t";
+}
+.icon-file:before {
+  content: "u";
+}
+.icon-skill:before {
+  content: "m";
+}
+.icon-intro:before {
+  content: "b";
+}
+.icon-upload:before {
+  content: "x";
+}
+.icon-download:before {
+  content: "y";
+}
+.icon-save:before {
+  content: "z";
+}
+.icon-company:before {
+  content: "A";
+}
+.icon-reference:before {
+  content: "v";
+}
+.icon-details:before {
+  content: "B";
+}
+.icon-asset:before {
+  content: "C";
+}
+.icon-draft:before {
+  content: "D";
+}
+.icon-change:before {
+  content: "k";
+}
+.icon-right:before {
+  content: "w";
+}
+.icon-left:before {
+  content: "F";
+}
+.icon-location:before {
+  content: "G";
+}
+.icon-loading:before {
+  content: "H";
+}
+.icon-question:before {
+  content: "J";
+}
+.icon-up:before {
+  content: "I";
+}
+.icon-down:before {
+  content: "K";
+}
+.icon-finished:before {
+  content: "L";
+}
+.icon-pending:before {
+  content: "M";
+}
+.icon-expired:before {
+  content: "N";
+}
+.icon-writing:before {
+  content: "O";
+}
+.icon-error:before {
+  content: "P";
+}
+.icon-:before {
+  content: "j";
+}
+.icon--1:before {
+  content: "e";
+}
+.icon-default:before {
+  content: "E";
+}

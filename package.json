@@ -1,0 +1,23 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "Package solution for tezign",
+  "main": "app.js",
+  "dependencies": {
+    "backbone": "^1.1.2",
+    "bootstrap": "^3.3.4",
+    "express": "^4.12.3",
+    "express-handlebars": "^2.0.1",
+    "jquery": "^2.1.4",
+    "less": "^2.5.0",
+    "progressbar.js": "^0.8.1",
+    "select2": "^3.5.2-browserify",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joey Hu",
+  "license": "ISC"
+}
