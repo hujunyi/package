@@ -20270,7 +20270,8 @@ module.exports = Backbone.View.extend({
     'click a[href="#step3"]': 'step3',
     'click a[href="#step4"]': 'step4',
     'click a[href="#step5"]': 'step5',
-    'click a[href="#result"]': 'result'
+    'click a[href="#result"]': 'result',
+    'click #newproject': 'newproject'
   },
   step2: function(e){
     if(this.$('#type').length!==0){
@@ -20354,6 +20355,11 @@ module.exports = Backbone.View.extend({
     } else {
       $('#right').html(rightPane);
     }
+  },
+  newproject: function(e){
+    e.preventDefault();
+    //Todo new project
+    console.log('new project');
   }
 });
 
@@ -20392,13 +20398,16 @@ module.exports = Backbone.View.extend({
       case 'app':
         budget = 35;
         time = 4;
+        data.need = 'APP';
         break;
       case 'both':
         time = 8;
         budget = 60;
+        data.need = '网站、APP组合';
         break;
       default: 
         budget = 35;
+        data.need = '网站';
         break;
     }
     switch(data.objective){
@@ -20447,9 +20456,13 @@ module.exports = Backbone.View.extend({
     });
     setTimeout(function(){
       budget.animate(1);
-      work.animate(1);
-      candidates.animate(1);
     },200);
+    setTimeout(function(){
+      work.animate(1);
+    },400);
+    setTimeout(function(){
+      candidates.animate(1);
+    },400);
   }
 });
 
@@ -20464,6 +20477,11 @@ var step4View = require('./step4View');
 var step5View = require('./step5View');
 var resultView = require('./resultView');
 module.exports = Backbone.Router.extend({
+  /*
+  execute: function(callback, args) {
+    if (callback) callback.apply(this, args);
+  },
+ */
   initialize: function(options){
     this.appView = options.appView;
   },
@@ -20616,6 +20634,9 @@ var package = new Package();
 var Router = require('./router');
 var appView = new AppView({model: package});
 var router = new Router({appView : appView});
-Backbone.history.start({pushState: false});
+Backbone.history.start();
+window.addEventListener("hashchange", function(e) {
+  console.log(111);
+});
 
 },{"./appView":28,"./package":30,"./router":32,"backbone":1}]},{},[39]);

@@ -14,13 +14,16 @@ module.exports = Backbone.View.extend({
       case 'app':
         budget = 35;
         time = 4;
+        data.need = 'APP';
         break;
       case 'both':
         time = 8;
         budget = 60;
+        data.need = '网站、APP组合';
         break;
       default: 
         budget = 35;
+        data.need = '网站';
         break;
     }
     switch(data.objective){
@@ -69,8 +72,12 @@ module.exports = Backbone.View.extend({
     });
     setTimeout(function(){
       budget.animate(1);
-      work.animate(1);
-      candidates.animate(1);
     },200);
+    setTimeout(function(){
+      work.animate(1);
+    },400);
+    setTimeout(function(){
+      candidates.animate(1);
+    },400);
   }
 });

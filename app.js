@@ -6,9 +6,10 @@ var app = express();
 
 app.set('port', process.env.PORT || 3000);
 app.use(express.static(__dirname));
-app.get('/', function(req,res){
+var callback = function(req,res){
   res.render('index');
-});
+};
+app.get('*', callback);
 app.use(function(req,res){
   res.status(404);
   res.render('404');

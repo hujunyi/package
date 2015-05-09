@@ -11,7 +11,8 @@ module.exports = Backbone.View.extend({
     'click a[href="#step3"]': 'step3',
     'click a[href="#step4"]': 'step4',
     'click a[href="#step5"]': 'step5',
-    'click a[href="#result"]': 'result'
+    'click a[href="#result"]': 'result',
+    'click #newproject': 'newproject'
   },
   step2: function(e){
     if(this.$('#type').length!==0){
@@ -95,5 +96,10 @@ module.exports = Backbone.View.extend({
     } else {
       $('#right').html(rightPane);
     }
+  },
+  newproject: function(e){
+    e.preventDefault();
+    //Todo new project
+    console.log('new project');
   }
 });

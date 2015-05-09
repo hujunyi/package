@@ -8,6 +8,11 @@ var step4View = require('./step4View');
 var step5View = require('./step5View');
 var resultView = require('./resultView');
 module.exports = Backbone.Router.extend({
+  /*
+  execute: function(callback, args) {
+    if (callback) callback.apply(this, args);
+  },
+ */
   initialize: function(options){
     this.appView = options.appView;
   },
