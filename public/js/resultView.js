@@ -5,10 +5,11 @@ var ProgressBar = require('progressbar.js')
 require('bootstrap');
 module.exports = Backbone.View.extend({
   template: _.template($('#result').html()),
-  render: function(data){
+  render: function(model){
     var budget = 0;
     var time = 0;
     var param = 1;
+    var data = model.toJSON();
     switch(data.need){
       case 'website': 
       case 'app':
@@ -54,6 +55,8 @@ module.exports = Backbone.View.extend({
     }
     data.budget = budget * param; 
     data.time = time;
+    model.set('budget',data.budget);
+    model.set('budget',data.time);
     this.$el.html(this.template(data));
     this.initProgress();
   },

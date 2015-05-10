@@ -1,427 +1,465 @@
 <!doctype html>
-<html lang="en"><head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
-    <link rel="stylesheet" type="text/css" href="styles/fonts.css" />
-    <link rel="stylesheet" type="text/css" href="node_modules/select2/select2.css" />
-    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="styles/fonts.css"/>
+    <link rel="stylesheet" type="text/css" href="node_modules/select2/select2.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/main.css"/>
     <!--
     <script>less = { env: 'development'};</script>
     <script src="node_modules/less/dist/less.js"></script>
     <script>less.watch();</script>
     -->
-  </head>
-  <body>
-    <div id='main'>
-    </div>
-    <script type='text/template' id='init'>
-      <div class='header flex-container'>
+</head>
+<body>
+<div id='main'>
+</div>
+<script type='text/template' id='init'>
+    <div class='header flex-container'>
         <a href='#' class='btn btn-close'>退出<span class='icon icon-close'></span></a>
-      </div>
-      <div class='home'>
+    </div>
+    <div class='home'>
         <h1>Startup How much</h1>
+
         <p>产品设计到底需要花多少呢，产品设计用需要什么元素呢，完成一个产品需要3大步。</p>
         <a href='#start' class='btn btn-primary'>开始</a>
-      </div>
-    </script>
-    <script type='text/template' id='start'>
-      <div class='header flex-container'>
+    </div>
+</script>
+<script type='text/template' id='start'>
+    <div class='header flex-container'>
         <a href='#' class='btn btn-close'>退出<span class='icon icon-close'></span></a>
         <a href='#' class='btn btn-back'>返回</a>
-      </div>
-      <div class='start-center'>
+    </div>
+    <div class='start-center'>
         <h1>一个伟大的产品源自于伟大的设计</h1>
+
         <p>那么如何成就伟大的设计呢，设计由下面4种要素组成</p>
+
         <div class='flex-container'>
-          <div class='design-ele'>
-            <figure class='front'>
-              <div class='design-illustration'>
-              </div>
-              <h2>产品概念</h2>
-              <p>好的功能是一个产品的核心组成部分</p>
-            </figure><figure class='back'>
-            </figure>
-          </div>
-          <div class='design-ele'>
-            <figure class='front'>
-              <div class='design-illustration'>
-              </div>
-              <h2>品牌</h2>
-              <p>好的功能是一个产品的核心组成部分</p>
-              </figure>
-              <figure class='back'>
-            </figure>
-          </div>
-          <div class='design-ele'>
-            <figure class='front'>
-              <div class='design-illustration'>
-              </div>
-              <h2>体验</h2>
-              <p>好的功能是一个产品的核心组成部分</p>
-            </figure>
-            <figure class='back'>
-            </figure>
-          </div>
-          <div class='design-ele'>
-            <figure class='front'>
-              <div class='design-illustration'>
-              </div>
-              <h2>推广</h2>
-              <p>好的功能是一个产品的核心组成部分</p>
-            </figure>
-            <figure class='back'>
-            </figure>
-          </div>
+            <div class='design-ele'>
+                <figure class='front'>
+                    <div class='design-illustration'>
+                    </div>
+                    <h2>产品概念</h2>
+
+                    <p>好的功能是一个产品的核心组成部分</p>
+                </figure>
+                <figure class='back'>
+                </figure>
+            </div>
+            <div class='design-ele'>
+                <figure class='front'>
+                    <div class='design-illustration'>
+                    </div>
+                    <h2>品牌</h2>
+
+                    <p>好的功能是一个产品的核心组成部分</p>
+                </figure>
+                <figure class='back'>
+                </figure>
+            </div>
+            <div class='design-ele'>
+                <figure class='front'>
+                    <div class='design-illustration'>
+                    </div>
+                    <h2>体验</h2>
+
+                    <p>好的功能是一个产品的核心组成部分</p>
+                </figure>
+                <figure class='back'>
+                </figure>
+            </div>
+            <div class='design-ele'>
+                <figure class='front'>
+                    <div class='design-illustration'>
+                    </div>
+                    <h2>推广</h2>
+
+                    <p>好的功能是一个产品的核心组成部分</p>
+                </figure>
+                <figure class='back'>
+                </figure>
+            </div>
         </div>
         <div class='text-center'>
-          <a href='#step1' class='btn btn-primary'>下一步</a>
+            <a href='#step1' class='btn btn-primary'>下一步</a>
         </div>
-      </div>
-    </script>
-    <script type='text/template' id='step1'>
-      <div class='pane-inner pane-left animate' style='background-color:#5FFFEB'>
+    </div>
+</script>
+<script type='text/template' id='step1'>
+    <div class='pane-inner pane-left animate' style='background-color:#5FFFEB'>
         <div class='header-left'>
-          <a href='#start' class='btn-back btn'>上一步</a>
+            <a href='#start' class='btn-back btn'>上一步</a>
         </div>
         <div class='text-center'>
-          <h1 class='question'>?</h1>
-          <hr class='underline'>
+            <h1 class='question'>?</h1>
+            <hr class='underline'>
         </div>
         <div class='text-center step'>
-          <div class='dialog'>
-            <h2>您想要做什么？</h2>
-            <p>想对您的产品、品牌做一些改进？从这里开始！</p>
-          </div>
-          <img src='public/img/step1.png'>
+            <div class='dialog'>
+                <h2>您想要做什么？</h2>
+
+                <p>想对您的产品、品牌做一些改进？从这里开始！</p>
+            </div>
+            <img src='public/img/step1.png'>
         </div>
-      </div>
-      <div class='pane-inner pane-right animate'>
+    </div>
+    <div class='pane-inner pane-right animate'>
         <div class='header-right'>
-          <a href='#' class='btn btn-close'>退出<span class='icon icon-close'></span></a>
+            <a href='#' class='btn btn-close'>退出<span class='icon icon-close'></span></a>
         </div>
         <div class='content-xs text-center'>
-          <div class='form-group flex-container category'>
+            <div class='form-group flex-container category'>
             <span>
               我要
             </span>
-            <select id='type'>
-              <option>
-              产品
-              </option>
-              <option>
-                App
-              </option>
-              <option>
-                网站
-              </option>
-              <option>
-                服务
-              </option>
-            </select>
-            <select id='category'>
-              <option>
-  􏱁􏱂􏱃􏱄􏱅􏱆􏱁􏱂􏱃􏱄􏱅􏱆初创设计方案
-              </option>
-              <option>
-              品牌设计
-              </option>
-              <option>
-              产品UI
-              </option>
-              <option>
-              市场推广资料
-              </option>
-            </select>
-          </div>
-          <a href='#step2' class='btn-primary btn'>下一步</a>
+                <select id='type'>
+                    <option>
+                        产品
+                    </option>
+                    <option>
+                        App
+                    </option>
+                    <option>
+                        网站
+                    </option>
+                    <option>
+                        服务
+                    </option>
+                </select>
+                <select id='category'>
+                    <option>
+                        初创设计方案
+                    </option>
+                    <option>
+                        品牌设计
+                    </option>
+                    <option>
+                        产品UI
+                    </option>
+                    <option>
+                        市场推广资料
+                    </option>
+                </select>
+            </div>
+            <a href='#step2' class='btn-primary btn'>下一步</a>
         </div>
         <div class='footer'>
-          <div class='flex-container step-indicator'>
-            <a href='#step1' class='active'><span>1</span></a>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>5</span>
-          </div>
+            <div class='flex-container step-indicator'>
+                <a href='#step1' class='active'><span>1</span></a>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+            </div>
         </div>
-      </div>
-    </script>
-    <script type='text/template' id='step2'>
-      <div class='pane-left pane-inner animate' style='background-color:#F3B1B1'>
+    </div>
+</script>
+<script type='text/template' id='step2'>
+    <div class='pane-left pane-inner animate' style='background-color:#F3B1B1'>
         <div class='header-left'>
-          <a href='#step1' class='btn-back btn'>上一步</a>
+            <a href='#step1' class='btn-back btn'>上一步</a>
         </div>
         <div class='text-center'>
-          <h1 class='question'>?</h1>
-          <hr class='underline'>
+            <h1 class='question'>?</h1>
+            <hr class='underline'>
         </div>
         <div class='text-center step'>
-          <div class='dialog'>
-            <h2>您想要做什么？</h2>
-            <p>想对您的产品、品牌做一些改进？从这里开始！</p>
-          </div>
-          <img src='public/img/step2.png'>
+            <div class='dialog'>
+                <h2>您想要做什么？</h2>
+
+                <p>想对您的产品、品牌做一些改进？从这里开始！</p>
+            </div>
+            <img src='public/img/step2.png'>
         </div>
-      </div>
-      <div class='pane-inner pane-right animate'>
+    </div>
+    <div class='pane-inner pane-right animate'>
         <div class='header-right'>
-          <a href='#' class='btn btn-close'>退出<span class='icon icon-close'></span></a>
+            <a href='#' class='btn btn-close'>退出<span class='icon icon-close'></span></a>
         </div>
         <div class='content-lg'>
-          <div class='line-for-img flex-container'>
-            <div class='text-center'>
-              <a href='#step3' class='option' data-phase='刚刚起步'>
-                <img data-src="holder.js/140x140" class="img-circle" alt="140x140" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTBwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xNDB4MTQwPC90ZXh0PjwvZz48L3N2Zz4=">
-              </a>
-              <div>刚刚起步</div>
+            <div class='line-for-img flex-container'>
+                <div class='text-center'>
+                    <a href='#step3' class='option' data-phase='刚刚起步'>
+                        <img data-src="holder.js/140x140" class="img-circle" alt="140x140"
+                             src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTBwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xNDB4MTQwPC90ZXh0PjwvZz48L3N2Zz4=">
+                    </a>
+
+                    <div>刚刚起步</div>
+                </div>
+                <div class='text-center'>
+                    <a href='#step3' class='option' data-phase='融资到位'>
+                        <img data-src="holder.js/140x140" class="img-circle" alt="140x140"
+                             src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTBwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xNDB4MTQwPC90ZXh0PjwvZz48L3N2Zz4=">
+                    </a>
+
+                    <div>融资到位</div>
+                </div>
+                <div class='text-center'>
+                    <a href='#step3' class='option' data-phase='小有成就'>
+                        <img data-src="holder.js/140x140" class="img-circle" alt="140x140"
+                             src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTBwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xNDB4MTQwPC90ZXh0PjwvZz48L3N2Zz4=">
+                    </a>
+
+                    <div>小有成就</div>
+                </div>
             </div>
-            <div class='text-center'>
-              <a href='#step3' class='option' data-phase='融资到位'>
-                <img data-src="holder.js/140x140" class="img-circle" alt="140x140" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTBwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xNDB4MTQwPC90ZXh0PjwvZz48L3N2Zz4=">
-              </a>
-              <div>融资到位</div>
-            </div>
-            <div class='text-center'>
-              <a href='#step3' class='option' data-phase='小有成就'>
-                <img data-src="holder.js/140x140" class="img-circle" alt="140x140" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTBwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xNDB4MTQwPC90ZXh0PjwvZz48L3N2Zz4=">
-              </a>
-              <div>小有成就</div>
-            </div>
-          </div>
         </div>
         <div class='footer'>
-          <div class='flex-container step-indicator'>
-            <a href='#step1' class='active'><span>1</span></a>
-            <a href='#step2' class='active'><span>2</span></a>
-            <span>3</span>
-            <span>4</span>
-            <span>5</span>
-          </div>
+            <div class='flex-container step-indicator'>
+                <a href='#step1' class='active'><span>1</span></a>
+                <a href='#step2' class='active'><span>2</span></a>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+            </div>
         </div>
-      </div>
-    </script>
-    <script type='text/template' id='step3'>
-      <div class='pane-left pane-inner animate' style='background-color:#93DCA6'>
+    </div>
+</script>
+<script type='text/template' id='step3'>
+    <div class='pane-left pane-inner animate' style='background-color:#93DCA6'>
         <div class='header-left'>
-          <a href='#step2' class='btn-back btn'>上一步</a>
+            <a href='#step2' class='btn-back btn'>上一步</a>
         </div>
         <div class='text-center'>
-          <h1 class='question'>?</h1>
-          <hr class='underline'>
+            <h1 class='question'>?</h1>
+            <hr class='underline'>
         </div>
         <div class='text-center step'>
-          <div class='dialog'>
-            <h2>您想要做什么？</h2>
-            <p>想对您的产品、品牌做一些改进？从这里开始！</p>
-          </div>
-          <img src='public/img/step3.png'>
+            <div class='dialog'>
+                <h2>您想要做什么？</h2>
+
+                <p>想对您的产品、品牌做一些改进？从这里开始！</p>
+            </div>
+            <img src='public/img/step3.png'>
         </div>
-      </div>
-      <div class='pane-inner pane-right animate'>
+    </div>
+    <div class='pane-inner pane-right animate'>
         <div class='header-right'>
-          <a href='#' class='btn btn-close'>退出<span class='icon icon-close'></span></a>
+            <a href='#' class='btn btn-close'>退出<span class='icon icon-close'></span></a>
         </div>
         <div class='content-lg'>
-          <div class='line-for-img flex-container'>
-            <div class='text-center'>
-              <a href='#step4' data-need='website'>
-                <img data-src="holder.js/140x140" class="img-circle" alt="140x140" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTBwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xNDB4MTQwPC90ZXh0PjwvZz48L3N2Zz4=">
-              </a>
-              <div>我需要网站的UI设计</div>
+            <div class='line-for-img flex-container'>
+                <div class='text-center'>
+                    <a href='#step4' data-need='website'>
+                        <img data-src="holder.js/140x140" class="img-circle" alt="140x140"
+                             src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTBwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xNDB4MTQwPC90ZXh0PjwvZz48L3N2Zz4=">
+                    </a>
+
+                    <div>我需要网站的UI设计</div>
+                </div>
+                <div class='text-center'>
+                    <a href='#step4' data-need='app'>
+                        <img data-src="holder.js/140x140" class="img-circle" alt="140x140"
+                             src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTBwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xNDB4MTQwPC90ZXh0PjwvZz48L3N2Zz4=">
+                    </a>
+
+                    <div>APP的UI设计</div>
+                </div>
+                <div class='text-center'>
+                    <a href='#step4' data-need='both'>
+                        <img data-src="holder.js/140x140" class="img-circle" alt="140x140"
+                             src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTBwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xNDB4MTQwPC90ZXh0PjwvZz48L3N2Zz4=">
+                    </a>
+
+                    <div>网页和APP都要</div>
+                </div>
             </div>
-            <div class='text-center'>
-              <a href='#step4' data-need='app'>
-                <img data-src="holder.js/140x140" class="img-circle" alt="140x140" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTBwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xNDB4MTQwPC90ZXh0PjwvZz48L3N2Zz4=">
-              </a>
-              <div>APP的UI设计</div>
-            </div>
-            <div class='text-center'>
-              <a href='#step4' data-need='both'>
-                <img data-src="holder.js/140x140" class="img-circle" alt="140x140" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTBwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xNDB4MTQwPC90ZXh0PjwvZz48L3N2Zz4=">
-              </a>
-              <div>网页和APP都要</div>
-            </div>
-          </div>
         </div>
         <div class='footer'>
-          <div class='flex-container step-indicator'>
-            <a href='#step1' class='active'><span>1</span></a>
-            <a href='#step2' class='active'><span>2</span></a>
-            <a href='#step3' class='active'><span>3</span></a>
-            <span>4</span>
-            <span>5</span>
-          </div>
+            <div class='flex-container step-indicator'>
+                <a href='#step1' class='active'><span>1</span></a>
+                <a href='#step2' class='active'><span>2</span></a>
+                <a href='#step3' class='active'><span>3</span></a>
+                <span>4</span>
+                <span>5</span>
+            </div>
         </div>
-      </div>
-    </script>
-    <script type='text/template' id='step4'>
-      <div class='pane-left pane-inner animate' style='background-color:#C5CCF0'>
+    </div>
+</script>
+<script type='text/template' id='step4'>
+    <div class='pane-left pane-inner animate' style='background-color:#C5CCF0'>
         <div class='header-left'>
-          <a href='#step3' class='btn-back btn'>上一步</a>
+            <a href='#step3' class='btn-back btn'>上一步</a>
         </div>
         <div class='text-center'>
-          <h1 class='question'>?</h1>
-          <hr class='underline'>
+            <h1 class='question'>?</h1>
+            <hr class='underline'>
         </div>
         <div class='text-center step'>
-          <div class='dialog'>
-            <h2>您想要做什么？</h2>
-            <p>想对您的产品、品牌做一些改进？从这里开始！</p>
-          </div>
-          <img src='public/img/step4.png'>
+            <div class='dialog'>
+                <h2>您想要做什么？</h2>
+
+                <p>想对您的产品、品牌做一些改进？从这里开始！</p>
+            </div>
+            <img src='public/img/step4.png'>
         </div>
-      </div>
-      <div class='pane-inner pane-right animate'>
+    </div>
+    <div class='pane-inner pane-right animate'>
         <div class='header-right'>
-          <a href='#step5' id='next'>下一步</a>
+            <a href='#step5' id='next'>下一步</a>
         </div>
         <div class='content-lg'>
-          <div class='line-for-img flex-container'>
-            <div class='text-center'>
-              <a href='#step5' data-objective='自我推广'>
-                <img data-src="holder.js/140x140" class="img-circle" alt="140x140" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTBwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xNDB4MTQwPC90ZXh0PjwvZz48L3N2Zz4=">
-              </a>
-              <div>自我推广</div>
+            <div class='line-for-img flex-container'>
+                <div class='text-center'>
+                    <a href='#step5' data-objective='自我推广'>
+                        <img data-src="holder.js/140x140" class="img-circle" alt="140x140"
+                             src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTBwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xNDB4MTQwPC90ZXh0PjwvZz48L3N2Zz4=">
+                    </a>
+
+                    <div>自我推广</div>
+                </div>
+                <div class='text-center'>
+                    <a href='#step5' data-objective='俘获用户'>
+                        <img data-src="holder.js/140x140" class="img-circle" alt="140x140"
+                             src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTBwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xNDB4MTQwPC90ZXh0PjwvZz48L3N2Zz4=">
+                    </a>
+
+                    <div>俘获用户</div>
+                </div>
+                <div class='text-center'>
+                    <a href='#step5' data-objective='全方位出击'>
+                        <img data-src="holder.js/140x140" class="img-circle" alt="140x140"
+                             src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTBwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xNDB4MTQwPC90ZXh0PjwvZz48L3N2Zz4=">
+                    </a>
+
+                    <div>全方位出击</div>
+                </div>
             </div>
-            <div class='text-center'>
-              <a href='#step5' data-objective='俘获用户'>
-                <img data-src="holder.js/140x140" class="img-circle" alt="140x140" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTBwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xNDB4MTQwPC90ZXh0PjwvZz48L3N2Zz4=">
-              </a>
-              <div>俘获用户</div>
-            </div>
-            <div class='text-center'>
-              <a href='#step5' data-objective='全方位出击'>
-                <img data-src="holder.js/140x140" class="img-circle" alt="140x140" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTBwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xNDB4MTQwPC90ZXh0PjwvZz48L3N2Zz4=">
-              </a>
-              <div>全方位出击</div>
-            </div>
-          </div>
         </div>
         <div class='footer'>
-          <div class='flex-container step-indicator'>
-            <a href='#step1' class='active'><span>1</span></a>
-            <a href='#step2' class='active'><span>2</span></a>
-            <a href='#step3' class='active'><span>3</span></a>
-            <a href='#step4' class='active'><span>4</span></a>
-            <span>5</span>
-          </div>
+            <div class='flex-container step-indicator'>
+                <a href='#step1' class='active'><span>1</span></a>
+                <a href='#step2' class='active'><span>2</span></a>
+                <a href='#step3' class='active'><span>3</span></a>
+                <a href='#step4' class='active'><span>4</span></a>
+                <span>5</span>
+            </div>
         </div>
-      </div>
-    </script>
-    <script type='text/template' id='step5'>
-      <div class='pane-left pane-inner animate' style='background-color:#EEE871'>
+    </div>
+</script>
+<script type='text/template' id='step5'>
+    <div class='pane-left pane-inner animate' style='background-color:#EEE871'>
         <div class='header-left'>
-          <a href='#step4' class='btn-back btn'>上一步</a>
+            <a href='#step4' class='btn-back btn'>上一步</a>
         </div>
         <div class='text-center'>
-          <h1 class='question'>?</h1>
-          <hr class='underline'>
+            <h1 class='question'>?</h1>
+            <hr class='underline'>
         </div>
         <div class='text-center step'>
-          <div class='dialog'>
-            <h2>您想要做什么？</h2>
-            <p>想对您的产品、品牌做一些改进？从这里开始！</p>
-          </div>
-          <img src='public/img/step5.png'>
+            <div class='dialog'>
+                <h2>您想要做什么？</h2>
+
+                <p>想对您的产品、品牌做一些改进？从这里开始！</p>
+            </div>
+            <img src='public/img/step5.png'>
         </div>
-      </div>
-      <div class='pane-inner pane-right animate'>
+    </div>
+    <div class='pane-inner pane-right animate'>
         <div class='header-right'>
-          <a href='#result' id='next'>下一步</a>
+            <a href='#result' id='next'>下一步</a>
         </div>
         <div class='content-md'>
-          <div class='line-for-img flex-container'>
-            <div class='text-center'>
-              <a href='#result' data-quality='超高性价比'>
-                <img data-src="holder.js/140x140" class="img-circle" alt="140x140" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTBwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xNDB4MTQwPC90ZXh0PjwvZz48L3N2Zz4=">
-              </a>
-              <div>超高性价比</div>
+            <div class='line-for-img flex-container'>
+                <div class='text-center'>
+                    <a href='#result' data-quality='超高性价比'>
+                        <img data-src="holder.js/140x140" class="img-circle" alt="140x140"
+                             src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTBwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xNDB4MTQwPC90ZXh0PjwvZz48L3N2Zz4=">
+                    </a>
+
+                    <div>超高性价比</div>
+                </div>
+                <div class='text-center'>
+                    <a href='#result' data-quality='美到极致'>
+                        <img data-src="holder.js/140x140" class="img-circle" alt="140x140"
+                             src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTBwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xNDB4MTQwPC90ZXh0PjwvZz48L3N2Zz4=">
+                    </a>
+
+                    <div>美到极致</div>
+                </div>
             </div>
-          <div class='text-center'>
-            <a href='#result' data-quality='美到极致'>
-              <img data-src="holder.js/140x140" class="img-circle" alt="140x140" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTBwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xNDB4MTQwPC90ZXh0PjwvZz48L3N2Zz4=">
-            </a>
-            <div>美到极致</div>
-          </div>
-          </div>
         </div>
         <div class='footer'>
-          <div class='flex-container step-indicator'>
-            <span class='active'>1</span>
-            <span class='active'>2</span>
-            <span class='active'>3</span>
-            <span class='active'>4</span>
-            <span class='active'>5</span>
-          </div>
+            <div class='flex-container step-indicator'>
+                <span class='active'>1</span>
+                <span class='active'>2</span>
+                <span class='active'>3</span>
+                <span class='active'>4</span>
+                <span class='active'>5</span>
+            </div>
         </div>
-      </div>
-    </script>
-    <script type='text/template' id='result'>
-      <div class='header flex-container'>
+    </div>
+</script>
+<script type='text/template' id='result'>
+    <div class='header flex-container'>
         <a href='#' class='btn btn-close'>退出<span class='icon icon-close'></span></a>
         <a href='#step5' class='btn-back btn'>上一步</a>
-      </div>
-      <div class='result-pane text-center'>
+    </div>
+    <div class='result-pane text-center'>
         <h1>大功告成，特赞为您生成了数据！</h1>
+
         <div class='flex-container'>
-          <div id='budget' class='progressbar'>
-            <%= budget %>k
-          </div>
-          <div id='work' class='progressbar'>
-            <%= time %>周
-          </div>
-          <div id='candidates' class='progressbar'>
-            99位设计师
-          </div>
+            <div id='budget' class='progressbar'>
+                <%= budget %>k
+            </div>
+            <div id='work' class='progressbar'>
+                <%= time %>周
+            </div>
+            <div id='candidates' class='progressbar'>
+                99位设计师
+            </div>
         </div>
         <div class='project-info'>
-          <a data-toggle="collapse" href="#projectDetails" aria-expanded="false" aria-controls="collapseExample">
-            展开详细信息
-          </a>
-          <div class="collapse text-left" id="projectDetails">
-            <div class="media">
-              <div class="media-left media-top">
-                <a href="#">
-                  <img class="img-circle media-object" src="public/img/result-brand.png">
+            <a data-toggle="collapse" href="#projectDetails" aria-expanded="false" aria-controls="collapseExample">
+                展开详细信息
+            </a>
 
-                </a>
-              </div>
-              <div class="media-body media-middle">
-                <h4 class="media-heading">品牌设计 : <%= phase %></h4>
-                logo、名片、GuideLine
-              </div>
+            <div class="collapse text-left" id="projectDetails">
+                <div class="media">
+                    <div class="media-left media-top">
+                        <a href="#">
+                            <img class="img-circle media-object" src="public/img/result-brand.png">
+
+                        </a>
+                    </div>
+                    <div class="media-body media-middle">
+                        <h4 class="media-heading">品牌设计 : <%= phase %></h4>
+                        logo、名片、GuideLine
+                    </div>
+                </div>
+                <hr>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="img-circle media-object" src="public/img/result-product.png">
+                        </a>
+                    </div>
+                    <div class="media-body media-middle">
+                        <h4 class="media-heading">UI设计 : <%= need %></h4>
+                        网站设计、APP设计、UI GUIDE
+                    </div>
+                </div>
+                <hr>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="img-circle media-object" src="public/img/result-marketing.png">
+                        </a>
+                    </div>
+                    <div class="media-body media-middle">
+                        <h4 class="media-heading">推广设计 : <%= quality %></h4>
+                        PPT、名片、GuideLine
+                    </div>
+                </div>
+                <hr>
             </div>
-            <hr>
-            <div class="media">
-              <div class="media-left">
-                <a href="#">
-                  <img class="img-circle media-object" src="public/img/result-product.png">
-                </a>
-              </div>
-              <div class="media-body media-middle">
-                <h4 class="media-heading">UI设计 : <%= need %></h4>
-                网站设计、APP设计、UI GUIDE
-              </div>
-            </div>
-            <hr>
-            <div class="media">
-              <div class="media-left">
-                <a href="#">
-                  <img class="img-circle media-object" src="public/img/result-marketing.png">
-                </a>
-              </div>
-              <div class="media-body media-middle">
-                <h4 class="media-heading">推广设计 : <%= quality %></h4>
-                PPT、名片、GuideLine
-              </div>
-            </div>
-            <hr>
-          </div>
         </div>
         <p>那么如何成就伟大的设计呢，设计由下面4种要素组成，那么如何成就伟大的设计呢，设计由下面4种要素组成，那么如何成就伟大</p>
         <a href='#' class='btn btn-primary' id='newproject'>生成项目</a>
-      </div>
-    </script>
-    <script src="bundle.js"></script>
-  </body>
+    </div>
+</script>
+<script src="bundle.js"></script>
+</body>
 </html>
