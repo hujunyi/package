@@ -7,5 +7,5 @@ var appView = new AppView({model: package});
 var router = new Router({appView : appView});
 Backbone.history.start();
 window.addEventListener("hashchange", function(e) {
-  console.log(111);
+
 });

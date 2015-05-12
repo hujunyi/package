@@ -9,7 +9,6 @@ body,
 body {
   background-color: #F9F9FB;
 }
-/*topography*/
 .question {
   color: #fff;
 }
@@ -33,6 +32,7 @@ body {
   -webkit-justify-content: space-between;
   position: relative;
   -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 .text-center {
   text-align: center;
@@ -48,7 +48,7 @@ body {
   top: 50%;
   width: 100%;
   text-align: center;
-  margin-top: -60px;
+  margin-top: -180px;
 }
 .home h1 {
   margin-bottom: 30px;
@@ -76,7 +76,7 @@ body {
   -webkit-transform-style: preserve-3d;
   transition: transform 1s;
   -webkit-transition: -webkit-transform 1s;
-  box-shadow: 1px 0 4px #000000 ;
+  box-shadow: 1px 0 4px #000000;
 }
 .design-ele:nth-child(1) {
   left: 0;
@@ -91,13 +91,17 @@ body {
   left: 660;
 }
 .design-ele .design-illustration {
-  height: 120px;
+  height: auto;
+  width: 100%;
   background-color: #F5F5F5;
 }
 .design-ele:hover {
   transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
+}
+.design-ele h2 {
+  font-size: 18px;
 }
 .design-ele .back,
 .design-ele .front {
@@ -110,9 +114,9 @@ body {
   -webkit-backface-visibility: hidden;
 }
 .design-ele .back {
+  padding: 20px;
   position: absolute;
   top: 0;
-  background: blue;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
@@ -131,9 +135,27 @@ body {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   position: relative;
+  top: 0px;
+}
+.option::after {
+  content: 'test content';
+  display: block;
+  position: absolute;
+  top: -90px;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border: 2px solid #4a4a4a;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 .option:hover {
   top: -5px;
+  transition: top 0.3s ease-in-out;
+}
+.option:hover::after {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
 }
 .animate__item--next {
   -moz-transform: translateX(-100%);
@@ -173,19 +195,44 @@ body {
   background-color: #fff;
 }
 .dialog {
-  width: 500px;
-  height: 200px;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
   background-color: #fff;
   box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.1);
   border-radius: 13px;
   padding: 40px;
+  position: absolute;
+  bottom: 65%;
+}
+.dialog::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 20px solid #fff;
+  border-left: 20px solid #fff;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  bottom: -40px;
+  left: 40%;
 }
 .step {
   position: absolute;
-  left: 50%;
-  margin-left: -250px;
+  left: 10%;
   bottom: 0;
+  width: 80%;
+  height: 70%;
+}
+.step img {
+  display: block;
+  width: auto;
+  height: 60%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: -5%;
+  left: 20%;
 }
 .content-lg {
   position: absolute;

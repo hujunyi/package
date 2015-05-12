@@ -2,7 +2,7 @@ var Backbone = require('backbone');
 var _ = require('underscore');
 var $ = require('jquery');
 var select2 = require('select2');
-
+require('jquery.cookie');
 Backbone.$ = $;
 module.exports = Backbone.View.extend({
     el: $('#main'),
@@ -15,26 +15,87 @@ module.exports = Backbone.View.extend({
         'click #newproject': 'newproject'
     },
     step2: function (e) {
+        var self = this;
+        e.preventDefault();
         if (this.$('#type').length !== 0) {
             this.model.set('type', this.$('#type').val());
             this.model.set('category', this.$('#category').val());
         }
+
+        switch (self.model.get('category')) {
+            case '初创设计方案':
+                Backbone.history.navigate('step2', true);
+                break;
+            case '品牌设计':
+                Backbone.history.navigate('step2', true);
+                break;
+            case '产品UI':
+                Backbone.history.navigate('step3', true);
+                break;
+            case '市场推广资料':
+                Backbone.history.navigate('step4', true);
+                break;
+            default:
+                Backbone.history.navigate('step3', true);
+                break;
+        }
     },
     step3: function (e) {
+        e.preventDefault();
         this.model.set('phase', $(e.currentTarget).data('phase'));
-    },
+        switch (this.model.get('category')) {
+            case '初创设计方案':
+                Backbone.history.navigate('step3', true);
+                break;
+            case '品牌设计':
+                Backbone.history.navigate('step5', true);
+                break;
+            case '产品UI':
+                Backbone.history.navigate('step5', true);
+                break;
+            case '市场推广资料':
+                Backbone.history.navigate('step5', true);
+                break;
+            default:
+                Backbone.history.navigate('step3', true);
+                break;
+        }
+    }
+    ,
     step4: function (e) {
+        e.preventDefault();
         this.model.set('need', $(e.currentTarget).data('need'));
-    },
+        switch (this.model.get('category')) {
+            case '初创设计方案':
+                Backbone.history.navigate('step4', true);
+                break;
+            case '品牌设计':
+                Backbone.history.navigate('step4', true);
+                break;
+            case '产品UI':
+                Backbone.history.navigate('step5', true);
+                break;
+            case '市场推广资料':
+                Backbone.history.navigate('step4', true);
+                break;
+            default:
+                Backbone.history.navigate('step4', true);
+                break;
+        }
+    }
+    ,
     step5: function (e) {
         this.model.set('objective', $(e.currentTarget).data('objective'));
-    },
+    }
+    ,
     result: function (e) {
         this.model.set('quality', $(e.currentTarget).data('quality'));
-    },
+    }
+    ,
     initialize: function () {
         this.twoPane = false;
-    },
+    }
+    ,
     showMain: function (view) {
         this.twoPane = false;
         this.animate = false;
@@ -44,7 +105,8 @@ module.exports = Backbone.View.extend({
         this.view = view;
         this.view.render(this.model);
         $('#main').html(this.view.el);
-    },
+    }
+    ,
     showTwoPanes: function (view) {
         if (!this.animate) {
             this.animate = true;
@@ -57,10 +119,11 @@ module.exports = Backbone.View.extend({
             this.view.remove();
         }
         this.view = view;
-        this.view.render();
+        this.view.render(this.model);
         this.showLeftPane(this.view.leftPane());
         this.showRightPane(this.view.rightPane());
-    },
+    }
+    ,
     showLeftPane: function (leftPane) {
         var $pane = $('#left').find('.pane-inner');
         var $left = $('#left');
@@ -78,7 +141,8 @@ module.exports = Backbone.View.extend({
         } else {
             $('#left').html(leftPane);
         }
-    },
+    }
+    ,
     showRightPane: function (rightPane) {
         var $pane = $('#right').find('.pane-inner');
         var $right = $('#right');
@@ -96,7 +160,8 @@ module.exports = Backbone.View.extend({
         } else {
             $('#right').html(rightPane);
         }
-    },
+    }
+    ,
     newproject: function (e) {
         e.preventDefault();
         //Todo new project
@@ -144,14 +209,17 @@ module.exports = Backbone.View.extend({
         } else {
             project['time'] = "2个月以上";
         }
-
+        project['clientId'] = $.cookie('uuid');
         $.ajax({
-            type: 'post',
+            type: 'POST',
             url: '/project',
-            success: function(){
+            contentType: 'application/json',
+            data: JSON.stringify(project),
+            dataType: 'json',
+            success: function (data) {
                 window.location = '/client';
             },
-            error: function(){
+            error: function () {
                 alert('您的数据有误');
             }
         })
