@@ -2,6 +2,7 @@ var Backbone = require('backbone');
 var _ = require('underscore');
 var $ = jQuery = require('jquery');
 var ProgressBar = require('progressbar.js');
+require('bootstrap');
 module.exports = Backbone.View.extend({
   template: _.template($('#result').html()),
   render: function(model){
